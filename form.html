@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">REGISTRATION FORM</h1>
+            <hr>
+            <h2>Donor Information</h2>
+            <p>Name* : <input type="text" name="name" required></p>
+            <p>Mobile No.* : <input type="tel" name="pincode" id="pincode" required></p>
+            <p>Email-Id* : <input type="email" name="email" id="email" required></p>
+            <p>Age* : <input type="number" name="pincode" id="pincode" required></p>
+            <fieldset>
+                <legend>Gender* </legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male" required> 
+                    Female <input type="radio" name="gender" id="female" required> 
+                </p>
+            </fieldset>
+            <p>Address : <textarea name="address" id="address" cols="50" rows="8"></textarea></p>
+            <label for="blood">Select your blood group* : </label>
+            <select name="blood" id="blood" required>
+            <option value="other">--Select blood group--</option>    
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            </select>
+            <p>Pincode* : <input type="text" name="pincode" id="pincode" required></p>
+            <p>Aadhar card : <input type="text" name="aadhar" id="aadhar"></p>
+            <p>Date of recovery* : <input type="date" name="date" id="date" required></p>
+            <p id="submission"><input type="submit" value="Submit"></p>
+
+        </form>
+    </div>
+</body>
+</html>
