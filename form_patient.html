@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">REGISTRATION FORM</h1>
+            <hr>
+            <h2>Patient Information</h2>
+            <p>Patient's Name* : <input type="text" name="name" required></p>
+            <p>Mobile No.* : <input type="tel" name="pincode" id="pincode" required></p>
+            <p>Email-Id : <input type="email" name="email" id="email"></p>
+            <p>How old is the patient?* : <input type="number" name="pincode" id="pincode" required></p>
+            <fieldset>
+                <legend>Patient's Gender* </legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male" required> 
+                    Female <input type="radio" name="gender" id="female" required> 
+                </p>
+            </fieldset>
+            <p>City you are currently in* : <input type="text" name="city" required></p>
+            <p>Which hospital is patient in? : <input type="text" name="hospital" placeholder="Enter a location"></p>
+            <label for="blood">Select patient's blood group* : </label>
+            <select name="blood" id="blood" required>
+            <option value="other">--Select blood group--</option>    
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Do you have case sheet from doctor?* </legend>
+                <p>
+                    Yes <input type="radio" name="option" id="yes" required> 
+                    Not Yet <input type="radio" name="option" id="no" required> 
+                </p>
+            </fieldset>
+            <br>
+            <p id="submission"><input type="submit" value="Submit"></p>
+
+        </form>
+    </div>
+</body>
+</html>
