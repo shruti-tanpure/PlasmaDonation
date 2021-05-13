@@ -57,3 +57,14 @@ input[type="submit"]:hover {
 #submission {
     text-align: center;
 }
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
