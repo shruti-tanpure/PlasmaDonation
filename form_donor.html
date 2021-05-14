@@ -11,22 +11,20 @@
         <form action = "thankyou.html" method = "post" id = "form1">
             <h1 class="main_heading">REGISTRATION FORM</h1>
             <hr>
-            <h2>Patient Information</h2>
-            <div class="required_field">Patient's Name: </div><input type="text" name="name" required>
+            <h2>Donor Information</h2>
+            <div class="required_field">Name: </div><input type="text" name="name" required>
             <div class="required_field">Mobile No.: </div><input type="tel" name="pincode" id="pincode" required>
             <p>Email-Id : <input type="email" name="email" id="email"></p>
-            <div class="required_field">How old is the patient?: </div><input type="number" name="pincode" id="pincode" required>
+            <div class="required_field">Age: </div><input type="number" name="pincode" id="pincode" required>
             <fieldset>
-                <legend><div class="required_field">Patient's Gender </div></legend>
+                <legend><div class="required_field">Gender </div></legend>
                 <p>
                     Male <input type="radio" name="gender" id="male" required> 
                     Female <input type="radio" name="gender" id="female" required> 
                 </p>
             </fieldset>
-            <br>
-            <div class="required_field">City you are currently in: </div><input type="text" name="city" required></p>
-            <p>Which hospital is patient in? : <input type="text" name="hospital" placeholder="Enter a location"></p>
-            <label for="blood"><div class="required_field">Select patient's blood group: </div></label>
+            <p>Address : <textarea name="address" id="address" cols="50" rows="8"></textarea></p>
+            <label for="blood"><div class="required_field">Select your blood group: </div></label>
             <select name="blood" id="blood" required>
             <option value="other">--Select blood group--</option>    
             <option value="A+">A+</option>
@@ -40,15 +38,11 @@
             </select>
             <br>
             <br>
+            <div class="required_field">Pincode: </div><input type="text" name="pincode" id="pincode" required></p>
+            <div class="required_field">Date of recovery:</div><input type="date" name="date" id="date" required>
             <br>
-            <fieldset>
-                <legend><div class="required_field">Do you have case sheet from doctor? </div></legend>
-                <p>
-                    Yes <input type="radio" name="option" id="yes" required> 
-                    Not Yet <input type="radio" name="option" id="no" required> 
-                </p>
-            </fieldset>
             <br>
+            <p>Aadhar card : <input type="text" name="aadhar" id="aadhar"></p>
             <br>
             <p id="submission"><input type="submit" value="Submit"></p>
             <br>

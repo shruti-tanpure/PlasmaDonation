@@ -68,3 +68,64 @@ img {
     margin-right: auto;
     width: 50%;
 }
+
+.required_field::after {
+    content: "*";
+    color: red;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.table {
+    background-color:rgba(37, 122, 156, 0.945);
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.yes {
+    color: rgb(101, 209, 101);
+    font-weight: normal;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.no {
+    color: red;
+    font-weight: normal;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.content-table tr {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.content-table tr:nth-of-type(even+th) {
+    background-color: #f3f3f3;
+}
+
+.content-table tr:last-of-type {
+    border-bottom: 2px solid rgba(37, 122, 156, 0.945);
+}
+
+.content-table td:hover {
+    /* background-color: #f5f5f5; */
+    transform: scale(1.25);
+}
+
+.thank {
+    text-align: center;
+}
