@@ -2,15 +2,27 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'roboto','sans-serif';
-	box-sizing: border-box;
 }
 .header{
-	min-height: 50vh;  /*vh = veiwport height ; 100vh is complete height*/
-	width: 50%;
-	background-color: white;
-	background-position: center;
-	background-size: cover;
-	position: relative;
+	min-height: 100vh;  /*vh = veiwport height ; 100vh is complete height*/
+	width: 100%;
+}
+
+.header::before{
+  content:"";
+  background-image: url('file:///home/shruti/Desktop/undraw_medicine_b1ol.png');
+  background-repeat: no-repeat;
+  background-size: 95% 95%;
+  background-position: center;
+  opacity:0.15;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
 }
 
 nav{
@@ -21,14 +33,15 @@ nav{
 }
 
 nav img{  /*for logo*/
-	width: 100px;
+	width: 95px;
 	float: left;
 }
 
 .nav-links{
 	flex: 1;
 	text-align: right;
-	float: right;
+	padding-bottom:  10px;
+	border-bottom: 3px solid lightgrey;
 }
 
 .nav-links ul li{
@@ -36,6 +49,7 @@ nav img{  /*for logo*/
 	display: inline-block;  /*horizontal nav bar*/
 	padding: 8px 12px;
 	position: relative;
+	font-weight: bold;
 }
 
 .nav-links ul li a{
@@ -59,35 +73,36 @@ nav img{  /*for logo*/
 }
 
 .text-box{
-	width: 90%;
+	width: 100%;
 	color: black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	position: center;
 	transform: translate(-50%,-50);
 	text-align: center;
 }
 
+
 .text-box h1{
-	font-size: 45px;
+	margin-top: 175px;
+	font-size: 62px;
+	position:  center;
+	font-family: '';
 }
 
 .text-box p{
-	display: inline-block;
-    vertical-align: middle; 
-	margin: 10px 0 20px;
+	font-size: 25px;
 	color: black;
 }
 
 #para1{
 	font-size: 17px;
+	margin: 25px 0px 40px;
 	display: inline-block;
-	padding: 20px;
 }
 
 #para2{
-	padding: 25px;
-	font-size: 11px;
+	margin: 5px 0 5px;
+	display: inline-block;
+	font-size: 13px;
 }
 
 .hero-btn{
@@ -97,7 +112,7 @@ nav img{  /*for logo*/
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
-  	margin: 4px 2px;
+  	margin: 35px 4px 15px;
   	position: relative;
   	cursor: pointer;
   	transition-duration: 0.4s;
@@ -105,7 +120,7 @@ nav img{  /*for logo*/
 
 .donor{
 	color: white;
-	background-color: #1ca9c9;
+	background-color: green;
 }
 .patient{
 	border: 1px solid lightgrey;
@@ -120,4 +135,68 @@ nav img{  /*for logo*/
 .patient:hover{
 	background: black;
 	color: white;	
+}
+
+
+@media(max-width: 700px){
+	.header{
+		background-image-size: 35% 30%; 
+	}
+	.text-box h1{
+		font-size: 30px;
+	}
+
+	.nav-links ul li{
+		display: block;
+	}
+
+	.nav-links{
+		position: absolute;
+		background: pink;
+		height: 100vh;
+		width: 60%;
+		top: 0;
+		right: 0;
+		text-align: left;
+		z-index: 2;
+	}
+
+
+	.hero-btn{		
+	  	margin: 15px 4px 15px;
+	}
+
+}
+
+.work{
+	font-size: 42px;
+	margin: 50px;
+	text-decoration: underline 1px lightgrey;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.gallery {
+  width: 33.33%;
+  display: inline-block;
+  text-decoration-style: 
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+.register{
+	float: left;
+}
+.match{
+	margin: 0 auto;
+}
+.connect{
+	float: right;
+	background: white;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
 }
