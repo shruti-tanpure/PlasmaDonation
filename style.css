@@ -124,6 +124,7 @@ img {
 .content-table td:hover {
     /* background-color: #f5f5f5; */
     transform: scale(1.25);
+    font-weight: bold;
 }
 
 .thank {

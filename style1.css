@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'roboto','sans-serif';
+}
+.header{
+	min-height: 100vh;  /*vh = veiwport height ; 100vh is complete height*/
+	width: 100%;
+}
+
+.header::before{
+  content:"";
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position: center;
+  opacity:0.15;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color:#ddd; */
+}
+
+nav img{  /*for logo*/
+	width: 95px;
+	float: left;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+	padding-bottom:  10px;
+	/* border-bottom: 3px solid lightgrey; */
+	/* border-bottom: 3px solid red; */
+	shape-margin: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav-links ul li{
+	list-style-type: none;
+	display: inline-block;  /*horizontal nav bar*/
+	padding: 8px 12px;
+	position: relative;
+	font-weight: bold;
+}
+
+.nav-links ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after{    /*inserts something after the content of each selected element*/
+	content: '';
+	width: 0%;
+	height: 2px;
+	background : #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+.text-box{
+	width: 100%;
+	color: black;
+	position: center;
+	transform: translate(-50%,-50);
+	text-align: center;
+}
+
+
+.text-box h1{
+	margin-top: 145px;
+	font-size: 62px;
+	position:  center;
+	font-family: '';
+	background: white;
+}
+
+.text-box p{
+	color: black;
+}
+
+#para1{
+	font-size: 23px;
+	margin: 25px 0px 40px;
+	display: inline-block;
+}
+
+#para2{
+	margin: 5px 0 5px;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.hero-btn{
+	border: 1px solid;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 35px 4px 15px;
+  	position: relative;
+  	cursor: pointer;
+  	transition-duration: 0.4s;
+}
+
+.donor{
+	color: white;
+	background-color: green;
+}
+.patient{
+	border: 1px solid lightgrey;
+	color: black;
+	background-color:white;
+}
+.donor:hover{
+	background: lightgreen;
+	color: black;
+}
+
+.patient:hover{
+	background: black;
+	color: white;	
+}
+
+.work{
+	font-size: 35px;
+	margin: 20px;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.working hr{
+	width:25%;
+	text-align:center;
+	margin-left:500px;
+
+}
+
+.gallery {
+  width: 33.33%;
+  display: inline-block;
+  text-decoration-style: solid; 
+}
+
+.gallery img {
+  width: 100%;
+  height: 425px;
+}
+
+.register{
+	float: left;
+}
+
+.match{
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+.connect{
+	float: right;
+	background: white;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+}
+
+.gallery p{
+	margin: 25px;
+	font-size: 18px;
+}
+
+@media(max-width: 700px){
+	.header{
+		background-size: 35% 30%; 
+	}
+	.text-box h1{
+		font-size: 30px;
+	}
+
+	.nav-links ul li{
+		display: block;
+	}
+
+	.nav-links{
+		position: absolute;
+		background: pink;
+		height: 100vh;
+		width: 60%;
+		top: 0;
+		right: 0;
+		text-align: left;
+		z-index: 2;
+	}
+
+
+	.hero-btn{		
+	  	margin: 15px 4px 15px;
+	}
+
+}
+
+
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+/* .dropdown 
+{
+    position: relative;
+    display: inline-block;
+} */
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a 
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: large;
+}
+
+header {
+	height: 70px;
+    width: 100%;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	/* background-color: rgb(104, 190, 141); */
+	background-color: white;
+}
+
+
